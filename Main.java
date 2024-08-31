@@ -4,10 +4,33 @@ import astonTraine.prototype.Shape;
 import astonTraine.prototype.shapes.Circle;
 import astonTraine.prototype.shapes.CopyShapesFactory;
 import astonTraine.prototype.shapes.Rectangle;
+import astonTraine.proxy.Connector;
+import astonTraine.proxy.ProxyConnector;
+import astonTraine.proxy.Server;
+import astonTraine.proxy.SomeConnector;
 
 public class Main {
     public static void main(String[] args) {
-        checkingPrototypePattern();
+        //Prototype
+        //checkingPrototypePattern();
+
+        //Без прокси
+        //Connector someConnector = new SomeConnector(new Server());
+//        someConnector.receiveFile("some.txt");
+//        someConnector.uploadFile("image.jpg");
+//        someConnector.receiveFile("");
+
+        // С прокси
+        // Дополнительный функционал по валидации
+        // Вызов сервера только при запросе
+//       Connector proxyConnector = new ProxyConnector();
+//        proxyConnector.receiveFile("some.txt");
+//        proxyConnector.uploadFile("image.jpg");
+
+
+
+
+
     }
     public static void checkingPrototypePattern(){
 
