@@ -1,5 +1,9 @@
 package astonTraine;
 
+import astonTraine.interpreter.AddExpression;
+import astonTraine.interpreter.Expression;
+import astonTraine.interpreter.NumberExpression;
+import astonTraine.interpreter.SubtractExpression;
 import astonTraine.prototype.Shape;
 import astonTraine.prototype.shapes.Circle;
 import astonTraine.prototype.shapes.CopyShapesFactory;
@@ -11,8 +15,13 @@ import astonTraine.proxy.SomeConnector;
 
 public class Main {
     public static void main(String[] args) {
-        //Prototype
+
+        // Паттерн Prototype
+
         //checkingPrototypePattern();
+
+
+        // Паттерн Proxy
 
         //Без прокси
         //Connector someConnector = new SomeConnector(new Server());
@@ -27,6 +36,22 @@ public class Main {
 //        proxyConnector.receiveFile("some.txt");
 //        proxyConnector.uploadFile("image.jpg");
 
+
+        // Паттерн Interpreter
+
+        // Создаем выражения для чисел
+//        Expression number1 = new NumberExpression(10);
+//        Expression number2 = new NumberExpression(5);
+//        Expression number3 = new NumberExpression(2);
+
+        // Создаем выражение для сложения: 10 + 5
+        //Expression addExpression = new AddExpression(number1, number2);
+
+        // Создаем выражение для вычитания: (10 + 5) - 2
+        //Expression subtractExpression = new SubtractExpression(addExpression, number3);
+
+        // Выполняем интерпретацию: (10 + 5) - 2 = 13
+        //System.out.println("Result: " + subtractExpression.interpret());
 
 
 
